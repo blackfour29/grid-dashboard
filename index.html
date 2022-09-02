@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+  <aside class="left-sidebar">
+    <div class="dashboard-container">
+      <div class="dashboard-top">
+        <i class="fa-solid fa-table"></i>
+        <h2 class="dashboard__title"> Dashboard</h2>
+      </div>
+    </div>
+
+    <div class="user-shortcuts-container">
+      <div class="shortcut">
+        <i class="fa-solid fa-house"></i>
+        <h3 class="shortcut__name">Home</h3>
+      </div>
+      <div class="shortcut">
+        <i class="fa-regular fa-id-card"></i>
+        <h3 class="shortcut__profile">Profile</h3>
+      </div>
+      <div class="shortcut">
+        <i class="fa-solid fa-message"></i>
+        <h3 class="shortcut__messages">Messages</h3>
+      </div>
+      <div class="shortcut">
+        <i class="fa-solid fa-clock"></i>
+        <h3 class="shortcut__history">History</h3>
+      </div>
+      <div class="shortcut">
+        <i class="fa-regular fa-paste"></i>
+        <h3 class="shortcut__tasks">Tasks</h3>
+      </div>
+      <div class="shortcut">
+        <i class="fa-solid fa-people-group"></i>
+        <h3 class="shortcut__communities">Communities</h3>
+      </div>
+    </div>
+
+    <div class="user-options-container">
+      <div class="option">
+        <i class="fa-solid fa-gear"></i>
+        <h3 class="option__settings">Settings</h3>
+      </div>
+      <div class="option">
+        <i class="fa-solid fa-circle-question"></i>
+        <h3 class="option__support">Support</h3>
+      </div>
+      <div class="option">
+        <i class="fa-solid fa-shield"></i>
+        <h3 class="option__privacy">Privacy</h3>
+      </div>
+    </div>
+  </aside>
+
+  <header class="header">
+
+    <div class="search-and-profile">
+      <div class="search">
+        <input type="text" name="search" id="search">
+      </div>
+      <div class="profile">
+        <i class="fa-regular fa-bell"></i>
+        <!-- a round image here or a div -->
+        <p class="profile__name"></p>
+      </div>
+    </div>
+
+    <div class="welcome-and-quick-buttons">
+
+      <div class="welcome-panel">
+        <div class="welcome-panel__image">
+          <!-- a round image here or a div -->
+        </div>
+        <small class="welcome-panel__welcome-message">Hi there,</small>
+        <h2 class="welcome-panel__username">Morgan Oakley (@morgan)</h2>
+      </div>
+
+      <div class="quick-buttons">
+        <button class="quick-buttons__new">New</button>
+        <button class="quick-buttons__upload">Upload</button>
+        <button class="quick-buttons__share">Share</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main-content">
+    <div class="articles">
+
+      <div class="article">
+        <h2 class="article__title"> Super cool project </h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+      <div class="article">
+        <h2 class="article__title"> Less cool project </h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+      <div class="article">
+        <h2 class="article__title"> Impossible App </h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+      <div class="article">
+        <h2 class="article__title"> Easy Peasy App </h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+      <div class="article">
+        <h2 class="article__title"> Ad Blocker</h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+      <div class="article">
+        <h2 class="article__title"> Money Maker </h2>
+        <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos.</p>
+      </div>
+
+    </div>
+
+    <aside class="right-sidebar">
+      <div class="announcements">
+        <div class="announcements__title">
+          Announcements
+        </div>
+        <div class="announcements-panel">
+
+          <div class="announcement">
+            <p class="announcement__title">Site Maintenance</p>
+            <p class="announcement__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem voluptatum blanditiis dignissimos ea maxime?</p>
+          </div>
+
+          <div class="announcement">
+            <p class="announcement__title">Community Share Day</p>
+            <p class="announcement__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem voluptatum blanditiis dignissimos ea maxime?</p>
+          </div>
+
+          <div class="announcement">
+            <p class="announcement__title">Privacy Policy</p>
+            <p class="announcement__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem voluptatum blanditiis dignissimos ea maxime?</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="trending">
+        <div class="trending__title">
+          Trending
+        </div>
+        <div class="trending__title">Trending</h2>
+        <div class="trending-panel">
+          <div class="trending-user">
+            <!-- round image here or div here-->
+            <p class="user__username">@tegan</p>
+            <p class="user__project">World Peace Builder</p>
+          </div>
+
+          <div class="trending-user">
+            <!-- round image here or div here-->
+            <p class="user__username">@morgan</p>
+            <p class="user__project">Super Cool Project</p>
+          </div>
+
+          <div class="trending-user">
+            <!-- round image here or div here-->
+            <p class="user__username">@kendall</p>
+            <p class="user__project">Life Changing App</p>
+          </div>
+
+          <div class="trending-user">
+            <!-- round image here or div here-->
+            <p class="user__username">@alex</p>
+            <p class="user__project">No Traffic Maker</p>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+</div>
+    
+
+</body>
+</html>
