@@ -12,7 +12,7 @@
 .container{
   display: grid;
   /* grid-template-columns: minmax(280px, 320px) 1fr; */
-  grid-template-columns: clamp(290px, 20% , 310px) 1fr; /* much more responsive, it stays 20% unless the size is smaller than 280px or higher than 310px*/
+  grid-template-columns: clamp(290px, 20% , 310px) 1fr; /* much more responsive approach: it stays 20% unless the size is smaller than 280px or higher than 310px*/
 }
 
 .icon{
@@ -28,20 +28,15 @@
   color: #fff;
   min-height: 100vh;
 }
-/* 
-.dashboard-container{
-  margin: 2rem 0 0 3rem;
-} */
 
 .dashboard-top{
   display: flex;
   align-items: center;
   gap: 10px;
-  /* margin-bottom: 5rem; */
   margin: 2rem 0 5rem 3rem;
 }
 
-.dashboard-icon{
+.dashboard__icon{
   font-size: 4.5rem;
 }
 
@@ -234,7 +229,6 @@ input[type=text]{
   display: grid;
   margin-bottom: 5rem;
   gap: 4rem;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   position: relative;
 }
@@ -305,8 +299,6 @@ input[type=text]{
   font-weight: bold;
 }
 
-
-
 .announcement__title{
   font-size: 1.6rem;
   font-weight: bold;
@@ -318,7 +310,6 @@ input[type=text]{
   line-height: 1.6;
 }
 
-
 /************/
 /* trending */
 /************/
@@ -328,7 +319,6 @@ input[type=text]{
   position: relative;
   background-color: #fff;
   box-sizing: border-box;
-  /* padding: 3rem 3rem 3rem 3rem; */
   padding: min(10%, 3rem); /* max 3rem on large screens, resposnive on smaller*/
   border-radius: 1rem;
   grid-template-rows: repeat(4, auto);
