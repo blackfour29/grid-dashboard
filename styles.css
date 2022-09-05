@@ -11,8 +11,8 @@
 
 .container{
   display: grid;
-  /* grid-template-columns: 350px 1fr; */
-  grid-template-columns: minmax(300px, 350px) 1fr;
+  /* grid-template-columns: minmax(280px, 320px) 1fr; */
+  grid-template-columns: clamp(290px, 20% , 310px) 1fr; /* much more responsive, it stays 20% unless the size is smaller than 280px or higher than 310px*/
 }
 
 .icon{
@@ -23,21 +23,22 @@
 /* Sidebar */
 /***********/
 
-.left-sidebar{
+.left-sidebar-container{
   background-color: var(--primary-color);
   color: #fff;
   min-height: 100vh;
 }
-
+/* 
 .dashboard-container{
   margin: 2rem 0 0 3rem;
-}
+} */
 
 .dashboard-top{
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
+  margin: 2rem 0 5rem 3rem;
 }
 
 .dashboard-icon{
@@ -56,7 +57,7 @@
   justify-items: start;
 }
 
-.shortcut-name{
+.shortcut__name{
   display: inline;
   margin-left: 2rem;
 }
@@ -78,7 +79,7 @@
 /* Header */
 /**********/
 
-header{
+.header-container{
   background-color: #fff;
   display: grid;
   grid-template-rows: auto auto;
@@ -88,14 +89,13 @@ header{
   margin-bottom: 5rem;
 }
 
-.profile-image-small{
+.profile__image--small{
   width: 50px;
 }
 
 .search-and-profile{
   width: 90%;
   margin: 3rem auto 0 auto;
-  /* margin: 0 auto; */
   display: grid;
   /* grid-template-columns: 1fr min-content; */
   grid-template-columns: auto auto;
@@ -143,7 +143,7 @@ input[type=text]{
   white-space: nowrap;
 }
 
-.profile-image-big{
+.profile__image--big{
   width: 80px;
 }
 
@@ -189,7 +189,7 @@ input[type=text]{
   gap: 3rem;
 }
 
-.quick-button{
+.quick-buttons__button{
   background-color: var(--secondary-color);
   border: none;
   color: #fff;
@@ -201,12 +201,16 @@ input[type=text]{
   font-size: 1.6rem;
 }
 
+.quick-buttons__button:hover{
+  opacity: 0.9;
+}
+
 /****************/
 /* Main Content */
 /****************/
 
 
-.content{
+.content-container{
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: auto 1fr; 
@@ -214,17 +218,17 @@ input[type=text]{
   background-color: rgb(226,232,240);
 }
 
-.main-content{
+.main-content-container{
   width: 90%;
   margin: 0 auto;
   display: grid;
   gap: 5%;
   grid-template-columns: 70% 25%;
-  /* think above totals 100% which means it is perfectly placed */
-  align-items: stretch;
+  /* this above totals 100% which means it is perfectly placed */
+  /* align-items: stretch; */
 }
 
-.articles{
+.articles-container{
   box-sizing: border-box;
   padding-right: 2rem;
   display: grid;
@@ -235,7 +239,7 @@ input[type=text]{
   position: relative;
 }
 
-.articles::before{
+.articles-container::before{
   content:"Your projects";
   position: absolute;
   top: -4rem;
@@ -272,20 +276,21 @@ input[type=text]{
 /* right-sidebar */
 /*****************/
 
-.right-sidebar{
+.right-sidebar-container{
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; /* change this to 1fr 1fr*/
+  /*grid-template-rows: 1fr 1fr;*/  /* change this to 1fr 1fr*/
+  grid-template-rows: repeat(2, minmax(min-content, 400px));
   gap: 8rem;
 }
 
-.announcements{
+.announcements-container{
   display: grid;
   position: relative;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: min(10%, 3rem);
   border-radius: 1rem;
   grid-template-rows:repeat(3, auto);
   gap: 2.5rem;
@@ -318,13 +323,16 @@ input[type=text]{
 /* trending */
 /************/
 
-.trending{
+.trending-container{
   display: grid;
   position: relative;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 3rem 3rem 3rem 3rem;
+  /* padding: 3rem 3rem 3rem 3rem; */
+  padding: min(10%, 3rem); /* max 3rem on large screens, resposnive on smaller*/
   border-radius: 1rem;
+  grid-template-rows: repeat(4, auto);
+  gap: 2.5rem;
 }
 
 .trending::before{
@@ -338,8 +346,7 @@ input[type=text]{
 
 .trending-panel{
   display: grid;
-  grid-template-rows: repeat(4, min-content);
-  gap: 2.5rem;
+  
 }
 
 .trending-user{

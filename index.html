@@ -12,39 +12,40 @@
 <body>
 
 <div class="container">
-  <aside class="left-sidebar">
-    <div class="dashboard-container">
+  <aside class="left-sidebar-container">
+
       <div class="dashboard-top">
         <i class="fa-solid fa-table dashboard-icon"></i>
         <h2 class="dashboard__title"> Dashboard</h2>
       </div>
-    </div>
 
     <div class="user-shortcuts-container">
+
       <div class="shortcut">
         <i class="icon fa-solid fa-house"></i>
-        <h3 class="shortcut-name shortcut__name">Home</h3>
+        <h3 class="shortcut__name shortcut__home">Home</h3>
       </div>
       <div class="shortcut">
         <i class="icon fa-regular fa-id-card"></i>
-        <h3 class="shortcut-name shortcut__profile">Profile</h3>
+        <h3 class="shortcut__name shortcut__profile">Profile</h3>
       </div>
       <div class="shortcut">
         <i class="icon fa-solid fa-message"></i>
-        <h3 class="shortcut-name shortcut__messages">Messages</h3>
+        <h3 class="shortcut__name shortcut__messages">Messages</h3>
       </div>
       <div class="shortcut">
         <i class="icon fa-solid fa-clock"></i>
-        <h3 class="shortcut-name shortcut__history">History</h3>
+        <h3 class="shortcut__name shortcut__history">History</h3>
       </div>
       <div class="shortcut">
         <i class="icon fa-regular fa-paste"></i>
-        <h3 class="shortcut-name shortcut__tasks">Tasks</h3>
+        <h3 class="shortcut__name shortcut__tasks">Tasks</h3>
       </div>
       <div class="shortcut">
         <i class="icon fa-solid fa-people-group"></i>
-        <h3 class="shortcut-name shortcut__communities">Communities</h3>
+        <h3 class="shortcut__name shortcut__communities">Communities</h3>
       </div>
+
     </div>
 
     <div class="user-options-container">
@@ -65,9 +66,9 @@
 
  
 
-  <main class="content">
+  <main class="content-container">
 
-    <header class="header">
+    <header class="header-container">
 
       <div class="search-and-profile">
         <div class="search">
@@ -76,7 +77,7 @@
         </div>
         <div class="profile">
           <i class="icon fa-regular fa-bell"></i>
-          <img src="images/avataaars.png" alt="profile-image" class="profile-image-small">
+          <img src="images/avataaars.png" alt="profile-image" class="profile__image--small">
           <h1 class="profile__name">Morgan Oakley</h1>
         </div>
       </div>
@@ -84,7 +85,7 @@
       <div class="welcome-and-quick-buttons">
         <div class="welcome-panel">
           <div class="welcome-panel__image">
-            <img src="images/avataaars.png" alt="profile-image" class="profile-image-big">
+            <img src="images/avataaars.png" alt="profile-image" class="profile__image--big">
           </div>
           <div class="welcome-panel__text">
             <small class="welcome-panel__welcome-message">Hi there,</small>
@@ -93,18 +94,18 @@
         </div>
   
         <div class="quick-buttons">
-          <button class="quick-button quick-buttons__new">New</button>
-          <button class="quick-button quick-buttons__upload">Upload</button>
-          <button class="quick-button quick-buttons__share">Share</button>
+          <button class="quick-buttons__button quick-buttons__newbtn">New</button>
+          <button class="quick-buttons__button quick-buttons__uploadbtn">Upload</button>
+          <button class="quick-buttons__button quick-buttons__sharebtn">Share</button>
         </div>
   
       </div>
   
     </header>
 
-    <div class="main-content">
+    <div class="main-content-container">
       
-      <div class="articles">
+      <div class="articles-container">
         <div class="article">
           <h2 class="article__title"> Super cool project </h2>
           <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum molestias eius velit nobis cum laudantium blanditiis assumenda accusamus id.</p>
@@ -137,8 +138,8 @@
 
       </div>
 
-      <aside class="right-sidebar">
-        <div class="announcements">
+      <aside class="right-sidebar-container">
+        <div class="announcements-container">
 
             <div class="announcement">
               <p class="announcement__title">Site Maintenance</p>
@@ -157,38 +158,36 @@
             
         </div>
         
-        <div class="trending">
-          <div class="trending-panel">
-            <div class="trending-user">
-              <img src="images/avataaars (1).png" alt="" class="user__avatar">
-              <div class="user-entry">
-                <p class="user__username">@tegan</p>
-                <p class="user__project">World Peace Builder</p>
-             </div>
+        <div class="trending-container">
+          <div class="trending-user">
+            <img src="images/avataaars (1).png" alt="" class="user__avatar">
+            <div class="user">
+              <p class="user__username">@tegan</p>
+              <p class="user__project">World Peace Builder</p>
             </div>
+          </div>
 
-            <div class="trending-user">
-              <img src="images/avataaars.png" alt="" class="user__avatar">
-              <div class="user-entry">
-                <p class="user__username">@morgan</p>
-                <p class="user__project">Super Cool Project</p>
-             </div>
+          <div class="trending-user">
+            <img src="images/avataaars.png" alt="" class="user__avatar">
+            <div class="user">
+              <p class="user__username">@morgan</p>
+              <p class="user__project">Super Cool Project</p>
             </div>
+          </div>
 
-            <div class="trending-user">
-              <img src="images/avataaars (3).png" alt="" class="user__avatar">
-              <div class="user-entry">
-                <p class="user__username">@kendall</p>
-                <p class="user__project">Life Changing App</p>
-              </div>
+          <div class="trending-user">
+            <img src="images/avataaars (3).png" alt="" class="user__avatar">
+            <div class="user">
+              <p class="user__username">@kendall</p>
+              <p class="user__project">Life Changing App</p>
             </div>
+          </div>
 
-            <div class="trending-user">
-              <img src="images/avataaars (4).png" alt="" class="user__avatar">
-              <div class="user-entry">
-                <p class="user__username">@alex</p>
-                <p class="user__project">No Traffic Maker</p>
-              </div>
+          <div class="trending-user">
+            <img src="images/avataaars (4).png" alt="" class="user__avatar">
+            <div class="user">
+              <p class="user__username">@alex</p>
+              <p class="user__project">No Traffic Maker</p>
             </div>
           </div>
         </div>
